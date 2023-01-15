@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'League Spartan', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    
+    background-color: #ffffff;
+}
+.page1{
+    width: 100%;
+    color: #541DB9;
+    font-family: 'Inter', sans-serif;
+    padding: 3% 4%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 1% 2% 0;
+}
+header a img{
+    width: 80%;
+    color: #6F2EE8;
+}
+header ul{
+    /* display: inline-block; */
+    float: right;
+}
+header ul li{
+    display: inline-block;
+    margin: 10px 25px;
+    list-style: none;
+    padding: 4px 6px;
+}
+header ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: #6F2EE8;
+    font-weight: 400;
+    font-size: 20px;
+}
+.active{
+    outline: #541DB9;
+    font-weight: bolder;
+}
+header ul li a::before {
+    content: '';
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    display: block;
+    background-color: #541DB9;
+    transition: 0.5s ease-out;
+}
+header ul li a:hover::before {
+    width: 100%;
+}
+.landing-page{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1% 2% 0;
+}
+.landing-page .left{
+    flex-basis: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10%;
+}
+.landing-page .right {
+    flex-basis: 55%;
+    /* border: 1px black solid; */
+}
+.landing-page .right img{
+    width: 85%;
+
+}
+.landing-page .left h1{
+    font-size: 48px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+.landing-page .left h5{
+    font-size: 23px;
+    margin-bottom: 70px; 
+    font-weight: 500;  
+}
+
+.hero-btn .btn1{
+    padding: 12px 24px;
+    background-color: #6F2EE8;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 19px;
+    margin-right: 7px;
+}
+.hero-btn .btn2{
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #6F2EE8;
+    border: 1px solid #6F2EE8;
+    font-weight: 500;
+    font-size: 19px;
+    margin-right: 7px;
+    box-shadow: 4px 4px 8px rgba(20, 20, 20, 0.137);
+}
+.hero-btn i{
+    font-weight: 300;
+    font-size: 16px;
+    margin-right: 7px;
+}
+
+
+section{
+    padding: 2% 5%;
+}
+.cardsection{
+    margin: 120px 0 75px;
+}
+.cardsection h1{
+    font-size: 59px;
+    text-align: left;   
+    margin-bottom: 50px;
+    color: #6F2EE8;
+    padding-left: 25px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    flex-basis: 23%;
+    background-color: #6F2EE8;
+    color: #ffffff;
+    padding: 25px 40px 35px 25px;
+}
+.card h5{
+    font-size: 19px;
+    margin: 5px 0 15px 0;
+    font-weight: 500;
+}
+.card p{
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.card a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 19px;
+    color: white;
+    position: relative;
+}
+.card i{
+    font-size: 30px;
+}
+.card a i{
+    font-weight: 500;
+    font-size: 28px;
+    top: -5px;
+    position: absolute;
+    margin-left: 5px;
+}
+hr{
+    background-color: rgba(185, 180, 180, 0.158);
+    height: 3px;
+    border: none;
+    margin-top: 20px
+}
+
+
+
+
+
+
+.whyuse{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.useleft{
+    flex-basis: 60%;
+    padding-left: 30px;
+
+}
+.useleft img{
+    width: 95%;
+}
+.useright{
+    flex-basis: 40%;
+    padding-left: 60px;
+}
+.useright h1{
+    color: black;
+    margin-bottom: 30px;
+    font-size: 63px;
+    font-weight: bold;
+}
+.useright .lorem p{
+    font-size: 22px;
+    line-height: 50px;
+    color: #541DB9;
+    font-weight: 400;
+}
+.useright .lorem p i{
+    color: black;
+    font-size: 26px;
+    margin-right: 25px;
+    font-weight: 400;
+}
+.useright .lorem{
+    margin-bottom: 40px;
+}
+.useright h4{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.partnerstray{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.partnerstray img{
+    width: 55px;
+    margin-right: 15px;
+}
+
+
+
+.blog{
+    padding: 2% 7%;
+}
+.blog h1, .shopping h1{
+    font-size: 45px;
+    color: #541DB9;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+.cart{
+    flex-basis: 32%;
+    padding: 20px 20px 40px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    /* max-height: 75vh; */
+    box-shadow:  0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.123);
+    transition: all 0.5s ease-in-out;
+}
+.cart:hover{
+    box-shadow:  0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+.cart img{
+    width: 100%;
+}
+.cart h3{
+    font-size: 27px;
+    font-weight: 500;
+    color: #541DB9;
+    padding: 20px 0;
+    line-height: 30px;
+}
+.cart p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #0e0424a9;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.cart a{
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: #541db9cb;
+    color: white;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+
+.shopping{
+    padding: 5% 7%;
+}
+.shopping .cart{
+    margin-bottom: 20px;
+}
+.shopping h3{
+    padding-bottom: 10px;
+}
+
+
+
+
+.team h1{
+    font-size: 40px;
+    color: #541db9e3;
+    font-weight: 700;
+    margin-bottom: 40px;
+    padding: 0 2%;
+}
+.teampic{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0% 3%;
+}
+.teampic p{
+    text-align: center;
+    color: #6F2EE8;
+    padding-top: 30px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.download{
+    background-color: #8C58EC;
+    color: white;
+    text-align: center;
+    padding: 40px 400px;
+    margin-top: 40px;
+}
+.download h4{
+    padding-bottom: 15px;
+    font-size: 36px;
+}
+.download p{
+    padding-bottom: 15px;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store img{
+    width: 130px;
+    margin-right: 20px;
+}
