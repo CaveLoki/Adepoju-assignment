@@ -28,6 +28,9 @@ header{
     align-items: center;
     margin-bottom: 20px;
     padding: 1% 2% 0;
+    position: sticky;
+    top: 10px;
+    background-color: white;
 }
 header a img{
     width: 80%;
@@ -132,6 +135,7 @@ header ul li a:hover::before {
     font-weight: 500;
     font-size: 19px;
     margin-right: 7px;
+    transition: all 0.5s ease-in;
 }
 .hero-btn .btn2{
     padding: 12px 24px;
@@ -142,6 +146,7 @@ header ul li a:hover::before {
     font-size: 19px;
     margin-right: 7px;
     box-shadow: 4px 4px 8px rgba(20, 20, 20, 0.137);
+    transition: all 0.5s ease-in;
 }
 .hero-btn i{
     font-weight: 300;
@@ -149,10 +154,10 @@ header ul li a:hover::before {
     margin-right: 7px;
 }
 .btn1:hover{
-    background-color: #8C58EC;
+    background-color: #361f5f;
 }
 .btn2:hover {
-    background-color: #8C58EC;
+    background-color: #361f5f;
     color: white;
 }
 
@@ -443,6 +448,10 @@ hr{
     border-radius: 7px;
     font-weight: 500;
     font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.cart a:hover{
+    background-color: #361f5f;
 }
 
 
