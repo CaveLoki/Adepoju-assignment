@@ -30,11 +30,12 @@
     <div class="page1">
         <header>
             <a href="#" class="logo"><img src="./TRACK PAL..jpg" alt=""></a>
+            <a href="#" class="logo2"><img src="./Group 37320 (1) 1.png" alt=""></a>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Community</a></li>
-                <li><a href="">Sign in</a></li>
+                <li><a href="./signup.html">Sign in</a></li>
             </ul>
         </header>
         <div class="landing-page">
@@ -42,7 +43,7 @@
                 <h1>A Friend That Cares About Your Work-Health Balance</h1>
                 <h5>Lorem ipsum is simply dummy text of the<br>printing and typesetting industry.</h5>
                 <div class="hero-btn">
-                    <a href="#" class="btn1">Join Us</a>
+                    <a href="#" class="btn1" id="join">Join Us</a>
                     <a href="#" class="btn2"><i class="fa-regular fa-circle-play"></i>Learn More</a>
                 </div>
             </div>
@@ -50,6 +51,36 @@
                 <img src="./istockphoto-1387125817-170667a-removebg-preview 1.png" alt="">
             </div>
         </div>    
+    </div>
+    <div class="background">
+        
+        <div class="signin">
+            <i class="fa-solid fa-xmark"></i>
+            <h3>Sign Up</h3>
+            <form action="">
+                <div class="name">
+                    <label for="name">Enter Name</label>
+                    <input type="text" name="" id="name">
+                </div>
+                <div class="email">
+                    <label for="email">Enter Email</label>
+                    <input type="email" name="" id="email">
+                </div>
+                <div class="password">
+                    <label for="password">Enter Password</label>
+                    <input type="password" name="" id="email">
+                </div>
+                <div class="remember">
+                    <input type="checkbox" name="" id="remember">
+                    <label for="remember"> Remember Password</label>
+                </div>
+                <div class="logbtn">
+                    <input type="button" value="Log in">
+                </div>
+            </form>
+            <p>Have an account? <a href="#">Sign in</a></p>
+        </div>
+        
     </div>
     <section>
         <div class="cardsection">
@@ -143,38 +174,38 @@
         <h1>Shopping Suggestions</h1>
         <div class="container">
             <div class="cart">
-                <img src="./woman-stretching-rubbing-stiff-back-muscles 1.png" alt="">
+                <img src="./orthopedic chair 2.png" alt="">
                 <h3>Ergonormic Chairs</h3>
                 <p>An ergonomic chair can help to improve posture, reduce back and neck pains</p>
                 <a href="#">Read more</a>
             </div>
             <div class="cart">
-                <img src="./Move more family 1 1.png" alt="">
+                <img src="./orthopedic table 2.png" alt="">
                 <h3>Tables</h3>
                 <p>Lorem ipsum is simply dummy text of the printing and typesetting...</p>
                 <a href="#">Read more</a>
             </div>
             <div class="cart">
-                <img src="./woman-stretching-rubbing-stiff-back-muscles 1 (1).png" alt="">
+                <img src="./cushion 3.png" alt="">
                 <h3>Cushions</h3>
                 <p>Lorem ipsum is simply dummy text of the printing and typesetting...</p>
                 <a href="#">Read more</a>
             </div>
             <div class="cart">
-                <img src="./woman-stretching-rubbing-stiff-back-muscles 1.png" alt="">
+                <img src="./heating pad 2.png" alt="">
                 <h3>HEAT PACKS</h3>
                 <p>Lorem ipsum is simply dummy text of the printing and typesetting...</p>
                 <a href="#">Read more</a>
             </div>
             <div class="cart">
-                <img src="./Move more family 1 1.png" alt="">
-                <h3>Tables</h3>
+                <img src="./socks 2.png" alt="">
+                <h3>Socks</h3>
                 <p>Lorem ipsum is simply dummy text of the printing and typesetting...</p>
                 <a href="#">Read more</a>
             </div>
             <div class="cart">
-                <img src="./woman-stretching-rubbing-stiff-back-muscles 1 (1).png" alt="">
-                <h3>Cushions</h3>
+                <img src="./pants 4.png" alt="">
+                <h3>Pants</h3>
                 <p>Lorem ipsum is simply dummy text of the printing and typesetting...</p>
                 <a href="#">Read more</a>
             </div>
@@ -212,5 +243,53 @@
             <img src="./appstor.png" alt="">
         </div>
     </div>
+    <section>
+        <footer>
+            <div class="socials">
+                <img src="./Group 37320 (1) 1.png" alt="">
+                <P>Your number 1 platform that caters for your work balance lifestyle</P>
+                <div class="sociallogo">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="website">
+                <h4>Website</h4>
+                <p>About Us</p>
+                <p>Community</p>
+                <p>Terms of Use</p>
+            </div>
+            <div class="website">
+                <h4>Support</h4>
+                <p>FAQ</p>
+                <p>Support Center</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="website">
+                <h4>Contact</h4>
+                <p>Don't hesitate to reach out to us on</p>
+                <p>team3@gmail.com</p>
+                <p>+447867665206</p>
+            </div>
+            <div class="sociallogom">
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        document.getElementById("join").addEventListener("click", function(){
+            document.querySelector(".background").style.display = "flex";
+        })
+
+        document.querySelector(".fa-xmark").addEventListener("click", function () {
+                document.querySelector(".background").style.display = "none";
+            })
+    </script>
 </body>
 </html>

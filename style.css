@@ -16,7 +16,10 @@ body{
     width: 100%;
     color: #541DB9;
     font-family: 'Inter', sans-serif;
-    padding: 3% 4%;
+    padding: 2% 4%;
+}
+.signuphtml .page1{
+    padding: 2% 0%;
 }
 header{
     display: flex;
@@ -45,19 +48,34 @@ header ul li a{
     color: #6F2EE8;
     font-weight: 400;
     font-size: 20px;
+    position: relative;
 }
 .active{
     outline: #541DB9;
     font-weight: bolder;
+    position: relative;
 }
-header ul li a::before {
+header ul li a::before{
     content: '';
-    height: 3px;
+    position: absolute;
+    height: 2px;
     width: 0%;
     margin: auto;
     display: block;
     background-color: #541DB9;
     transition: 0.5s ease-out;
+    top: -12px;
+}
+.active::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    background-color: #541DB9;
+    transition: 0.5s ease-out;
+    top: -12px;
 }
 header ul li a:hover::before {
     width: 100%;
@@ -118,13 +136,23 @@ header ul li a:hover::before {
     font-size: 16px;
     margin-right: 7px;
 }
+.btn1:hover{
+    background-color: #8C58EC;
+}
+.btn2:hover {
+    background-color: #8C58EC;
+    color: white;
+}
+
+
+
 
 
 section{
     padding: 2% 5%;
 }
 .cardsection{
-    margin: 120px 0 75px;
+    margin: 80px 0 75px;
 }
 .cardsection h1{
     font-size: 59px;
@@ -160,6 +188,12 @@ section{
     font-size: 19px;
     color: white;
     position: relative;
+    transition: 0.5s ease-in-out;
+}
+.card a:hover i{
+    position: absolute;
+    font-size: 33px;
+    top: -8px;
 }
 .card i{
     font-size: 30px;
@@ -177,6 +211,106 @@ hr{
     border: none;
     margin-top: 20px
 }
+
+
+
+
+.background{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.signin{
+    width: 500px;
+    height: 90vh;
+    background-color: #ffffff;
+    padding: 90px 80px;
+    position: relative;
+}
+.background i{
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 7px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.signin h3{
+    padding-bottom: 35px;
+    font-size: 34px;
+    font-weight: 500;
+}
+.email, .password, .name{
+    display: flex;
+    flex-direction: column;
+}
+.email label, .password label, .name label, .remember{
+    font-weight: 400;
+    padding: 12px 0;
+    font-size: 15px;
+    color: black;
+}
+.email input, .name input,
+.password input {
+    font-size: 18px;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px thin #6F2EE8;
+    padding: 12px 0;
+}
+.remember{
+    padding: 20px 0;
+}
+.logbtn input{
+    width: 100%;
+    background-color: #6F2EE8;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    padding: 16px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+.signin p, .lilac p{
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    font-weight: 300;
+}
+.signin p a, .lilac p a{
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+}
+.lilac{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: black;
+    /* background: url(./bg-intro-desktop\ \(1\).png) #6f2ee857; */
+}
+.lilac .signin {
+    width: 500px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 90px 80px;
+    box-shadow:  0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
 
 
 
@@ -363,4 +497,233 @@ hr{
 .store img{
     width: 130px;
     margin-right: 20px;
+}
+
+
+
+
+
+footer{
+    display: flex;
+    padding: 60px 50px 200px;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #531CB9;
+
+}
+.socials img{
+    width: 60px;
+    padding-bottom: 10px;
+}
+footer p{
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 400;
+    padding: 3px 0;
+}
+footer h4{
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+
+}
+.socials{
+    flex-basis: 22%;
+    padding-right: 30px;
+}
+.website{
+    flex-basis: 22%;
+}
+.sociallogo{
+    display: flex;
+}
+.sociallogo i{
+    padding-right: 25px;
+    font-size: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.sociallogo .fa-youtube:hover{
+    color: #FF0000;
+}
+.fa-facebook:hover{
+    color: #4267B2;
+}
+.fa-twitter:hover{
+    color: #1DA1F2;
+}
+.fa-instagram:hover{
+    color: #E1306C;
+}
+.logo2{
+    display: none;
+}
+.sociallogom{
+    display: none;
+}
+
+@media (max-width: 430px){
+    .logo2{
+        display: flex;
+    }
+    .logo{
+        display: none;
+    }
+    .landing-page{
+        display: block;
+        padding: 3% 5%;
+        
+    }
+    .landing-page .left h1{
+        font-size: 30px;
+        line-height: 40px;
+        padding-right: 70px;
+        margin-bottom: 25px;
+    }
+    .landing-page .left h5, .btn2{
+        display: none;
+    }
+    .landing-page .right img{
+    width: 95%;}
+    .landing-page .right{
+        padding-top: 60px;
+    }
+    
+    .cardsection h1{
+        display: none;
+    }
+    .cards{
+        display: block;
+        padding: 0 8%;
+    }
+    .card a{
+        display: none;
+    }
+    .card{
+        margin-top: 25px;
+    }
+    .whyuse{
+        display: block;
+    }
+    hr{
+        display: none;
+    }
+    .useright h1{
+        font-size: 26px;
+        margin-top: 30px;
+    }
+    .useright .lorem p{
+        font-size: 18px;
+        line-height: 34px;
+        
+    }
+    .useright .lorem p i{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .partnerstray{
+        display: none;
+    }
+    .useright h4{
+        display: none;
+    }
+    .blog h1, .shopping h1{
+        font-size: 26px;
+    }
+    .shopping{
+        margin-top: 40px;
+    }
+    .container{
+        display: block;
+    }
+    .teampic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: centers;
+    }
+    .team h1{
+        text-align: center;
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    
+    .teampic img{
+        width: 150px;
+    }
+    .teampic p{
+        margin-bottom: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+    .download{
+        padding: 130px 30px;
+        /* margin-top: 40px; */
+        width: 100%;
+    }
+    .download h4{
+        font-size: 26px;
+    }
+    .download p{
+        font-size: 16px;
+        padding: 20px 5px;
+        font-weight: 400;
+    }
+    .store{
+        /* width: 160px; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .socials img{
+        width: 48px;
+        margin-bottom: 15px;
+    }
+    .socials, .website{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 15px 0;
+        text-align: center;
+
+    }
+    footer{
+        padding: 3px 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    footer h4{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    footer p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .sociallogom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0 40px;
+    }
+.sociallogom i{
+        padding: 0px 25px;
+        font-size: 20px;
+        padding-top: 10px;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+    }
+    .sociallogo{
+        display: none;
+    }
+
+
+
 }
