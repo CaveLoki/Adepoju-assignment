@@ -31,12 +31,18 @@
         <header>
             <a href="#" class="logo"><img src="./TRACK PAL..jpg" alt=""></a>
             <a href="#" class="logo2"><img src="./Group 37320 (1) 1.png" alt=""></a>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Community</a></li>
                 <li><a href="./signup.html">Sign in</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
         </header>
         <div class="landing-page">
             <div class="left">
@@ -283,6 +289,14 @@
     </section>
 
     <script>
+
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+
+
+
+
+
         document.getElementById("join").addEventListener("click", function(){
             document.querySelector(".background").style.display = "flex";
         })
@@ -290,6 +304,15 @@
         document.querySelector(".fa-xmark").addEventListener("click", function () {
                 document.querySelector(".background").style.display = "none";
             })
+        
+
+
+        burger.addEventListener('click', () => {
+                // navbar toggle
+                nav.classList.toggle('nav-active');
+
+})
+
     </script>
 </body>
 </html>

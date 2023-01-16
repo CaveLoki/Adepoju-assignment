@@ -9,14 +9,15 @@
 }
 
 body{
-    
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 .page1{
     width: 100%;
     color: #541DB9;
     font-family: 'Inter', sans-serif;
     padding: 2% 4%;
+    overflow-x: hidden;
 }
 .signuphtml .page1{
     padding: 2% 0%;
@@ -49,6 +50,17 @@ header ul li a{
     font-weight: 400;
     font-size: 20px;
     position: relative;
+}
+.burger{
+    display: none;
+}
+.burger div {
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    border-radius: 4px;
+    transition: all 0.5s ease;
 }
 .active{
     outline: #541DB9;
@@ -165,6 +177,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .card{
     flex-basis: 23%;
@@ -563,9 +576,231 @@ footer h4{
     display: none;
 }
 
+
+
+
+
+
+
+
+
+@media (max-width: 830px){
+    .logo2{
+        display: flex;
+        width: 65px;
+        padding-left: 10px;
+    }
+    .logo{
+        display: none;
+    }
+    .landing-page{
+        display: flex;
+        padding: 3% 5%;
+        
+    }
+    .landing-page .left h1{
+        font-size: 35px;
+        line-height: 40px;
+        padding-right: 20px;
+        margin-bottom: 25px;
+    }
+    .landing-page .right img{
+        padding-top: 30px;
+        width: 100%;
+    }
+    .landing-page .left h5, .btn2{
+        display: none;
+    }
+    
+    
+    .cardsection h1{
+        display: none;
+    }
+    .cards{
+        display: flex;
+        padding: 0 8%;
+    }
+    /* .card a{
+        display: none;
+    } */
+    .card{
+        margin-top: 25px;
+        flex-basis: 48%;
+    }
+    /* .whyuse{
+        display: block;
+    } */
+    hr{
+        display: none;
+    }
+    .useleft, .useright{
+        flex-basis: 48%;
+        padding: 0;
+    }
+    .useleft img{
+        width: 100%;
+        padding: 0;
+    }
+    .useright h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .useright .lorem p{
+        font-size: 22px;
+        line-height: 45px;
+        
+    }
+    .useright .lorem p i{
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .partnerstray{
+        display: none;
+    }
+    .useright h4{
+        display: none;
+    }
+    .blog h1, .shopping h1{
+        font-size: 40px;
+    }
+    .shopping{
+        margin-top: 60px;
+    }
+    .cart{
+        flex-basis: 49%;
+        
+    }
+    .blog .cart{
+        margin-top: 30px;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .teampic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: centers;
+    }
+    .team h1{
+        text-align: center;
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    
+    .teampic img{
+        width: 150px;
+    }
+    .mary{
+        padding: 10px;
+    }
+    .teampic p{
+        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 10px;
+    }
+    .download{
+        padding: 100px 80px;
+        /* margin-top: 40px; */
+        width: 100%;
+    }
+    .download h4{
+        font-size: 45px;
+    }
+    .download p{
+        font-size: 22px;
+        padding: 20px 5px;
+        font-weight: 400;
+    }
+    
+    .socials img{
+        width: 48px;
+        margin-bottom: 15px;
+    }
+    
+    footer{
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 80px;
+        
+    }
+    footer h4{
+        font-size: 24px;
+        font-weight: 600;
+        padding: 10px 0 ;
+    }
+    footer p{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 7px 0;
+        line-height: 30px;
+    }
+    
+    header{
+        position: relative;
+    }
+    .nav-links{
+        width: 100%;
+        height: 90vh;
+        top: 50px;
+        right: 0;
+        position: absolute;
+        background-color: white;
+        z-index: 3;
+        text-align: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        
+    }
+
+    .nav-active{
+        transform: translateX(0);
+
+    }
+    
+    header ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        /* opacity: 0; */
+        padding: 15px 0;
+    }
+    header ul{
+        padding: 0 30px;
+    }
+    header ul li a{
+        color: #8C58EC;
+    }
+    header ul li::before{
+        display: none;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .active::before, header ul li a::before{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
 @media (max-width: 430px){
     .logo2{
         display: flex;
+        width: 65px;
+        padding-left: 10px;
     }
     .logo{
         display: none;
@@ -629,14 +864,21 @@ footer h4{
         display: none;
     }
     .blog h1, .shopping h1{
-        font-size: 26px;
+        font-size: 30px;
     }
+    
     .shopping{
         margin-top: 40px;
+        flex-wrap: wrap;
     }
     .container{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
+    .cart{
+        flex-basis: 100%;
+    }
+    
     .teampic{
         display: flex;
         justify-content: center;
@@ -723,6 +965,56 @@ footer h4{
     .sociallogo{
         display: none;
     }
+    header{
+        position: relative;
+    }
+    .nav-links{
+        width: 100%;
+        height: 90vh;
+        top: 50px;
+        right: 0;
+        position: absolute;
+        background-color: white;
+        z-index: 3;
+        text-align: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        
+    }
+
+    .nav-active{
+        transform: translateX(0);
+
+    }
+    
+    header ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+        /* opacity: 0; */
+        padding: 15px 0;
+    }
+    header ul{
+        padding: 0 30px;
+    }
+    header ul li a{
+        color: #8C58EC;
+    }
+    header ul li::before{
+        display: none;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .active::before, header ul li a::before{
+        display: none;
+    }
+    
+
+
 
 
 

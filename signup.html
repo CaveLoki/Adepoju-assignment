@@ -24,12 +24,19 @@
         <div class="page1">
             <header>
                 <a href="#" class="logo"><img src="./TRACK PAL..jpg" alt=""></a>
-                <ul>
+                <a href="#" class="logo2"><img src="./Group 37320 (1) 1.png" alt=""></a>
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Community</a></li>
-                    <li><a href="" class="active">Sign in</a></li>
+                    <li><a href="./signup.html" class="active">Sign in</a></li>
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            
             </header>
             <div class="lilac">
                 <div class="signin">
@@ -57,6 +64,18 @@
             </div>
         </div>
     </div>
+        <script>
+
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                // navbar toggle
+                nav.classList.toggle('nav-active');
+
+            })
+
+        </script>
     
     
 </body>
